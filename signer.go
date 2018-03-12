@@ -2,7 +2,7 @@ package main
 
 // сюда писать код
 
-func ExecutePipeline(jobs []job) {
+func ExecutePipeline(jobs ...job) {
 
 }
 
