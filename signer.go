@@ -2,16 +2,19 @@ package main
 
 // сюда писать код
 
-func ExecutePipeline(jobs ...job) {
+//type job func(in, out chan interface{})
+
+var ExecutePipeline = func(jobs ...job) {
 
 }
 
-func SingleHash(in, out chan interface{}) {
+var SingleHash = func(in, out chan interface{}) {
 
 }
-func MultiHash(in, out chan interface{}) {
+var MultiHash = func(in, out chan interface{}) {
 
 }
-func CombineResults(in, out chan interface{}) {
+
+var CombineResults = func(in, out chan interface{}) {
 
 }
