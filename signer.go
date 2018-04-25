@@ -19,7 +19,6 @@ var ExecutePipeline = func(jobs ...job) {
 
 		wg.Add(1)
 
-
 		out := make(chan interface{})
 		go jobWorker(job, in, out, wg)
 		in = out
