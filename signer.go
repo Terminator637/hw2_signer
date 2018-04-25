@@ -18,6 +18,8 @@ var ExecutePipeline = func(jobs ...job) {
 	for _, job := range jobs {
 
 		wg.Add(1)
+
+
 		out := make(chan interface{})
 		go jobWorker(job, in, out, wg)
 		in = out
